@@ -1,0 +1,345 @@
+/* Global Style */
+:root{
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: #FEF8F5;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+h1,h2{
+    font-family: DM Serif Display;
+}
+*{
+    box-sizing: border-box;
+    transition: .3s all ease-in-out;
+}
+.btn-main{
+    background: #EE4D47;
+    border-color: #EE4D47;
+    color: #fff;
+    border-radius: 5px;
+    Width: 155px;
+    Height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-main:hover{
+    background: transparent;
+    border-color: #EE4D47;
+    color: #EE4D47;
+}
+
+/* Intro section */
+#intro{
+    background: url(../images/MaskBg.png) no-repeat 0 0/ 79.5% 100%, url(../images/BG.png) no-repeat 0 0/ 79.5% 100%;
+    padding-bottom: 150px;
+    position: relative;
+}
+#intro nav{
+    z-index: 2;
+}
+
+/* navbar */
+#links{
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+#links a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+#links a:hover{
+    color: #EE4D47;
+}
+/* banner */
+#banner h1{
+    margin: 70px 0 30px 0;
+    font-family: DM Serif Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    color: #fff;
+    max-width: 600px;
+}
+#banner a {
+    line-height: 35px;
+    width: 200px;
+}
+
+#intro .img-persons{
+    position: absolute;
+    right: 28%;
+    bottom: -15%;
+    width: 300px;
+}
+#intro .img-car{
+    position: absolute;
+    left: 0;
+    bottom: -36%;
+    width: 400px;
+}
+#intro .img-circle-big{
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    opacity: 0.5;
+    /* width: 400px; */
+}
+#intro .img-circle-sm{
+    position: absolute;
+    right: 35%;
+    bottom: 10%;
+    width: 300px;
+    opacity: 0.5;
+}
+
+/* about us */
+#about{
+    margin-top: 350px;
+}
+.h3{
+    text-transform: uppercase;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    color: #EE4D47;
+}
+.p{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    color: #402B2B;
+    max-width: 370px;
+}
+#about .border-start{
+    background-color: #FDEDE8;
+    max-width: 410px;
+}
+
+/* how to apply */
+#howto{
+    margin-top: 170px;
+}
+#howto p{
+    max-width: 410px;
+}
+
+/* FAQ */
+#faq{
+    background: url(../images/faqBg.png) no-repeat 100% 100%/ 79.5% 100%;
+    margin-bottom: 250px;
+}
+#faq .h3{
+    margin-top: 160px;
+}
+#faq #faqH2{
+    max-width: 425px;
+    margin-bottom: 150px;
+}
+#faq .accordion-body {
+    max-width: 425px;
+}
+#faq .accordion-flush .accordion-collapse {
+    border-width: 0;
+    background-color: #FFF7F5;
+    border-radius: 10px;
+    background: linear-gradient(to top ,#FFF7F5 , #FDECE7);
+}
+
+/* change accordion icon */
+/* .accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+} */
+.accordion-button.collapsed::after {
+    /* background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>"); */
+    font-family: bootstrap-icons !important;
+    background-image: none;
+    content: "\f64d";
+    color: #ED4D47;
+}
+.accordion-button:not(.collapsed)::after {
+    font-family: bootstrap-icons !important;
+    background-image: none;
+    content: "\f63b";
+    transform: rotate(-180deg);
+    color: #ED4D47;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-flush .accordion-item {
+    border:0;
+    background: #FFF7F5;
+    box-shadow: 0px 20px 40px rgb(238 77 71 / 10%);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 10px;
+    font-weight: 500;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 10px;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+#AddMoreAccordion button {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #FACDC8;
+    color: #ED4D47;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+#AddMoreAccordion span{
+    justify-self: end;
+}
+#AddMoreAccordion #Plus{
+    justify-self: end;
+}
+#AddMoreAccordion .accordion-button::after{
+    display: none;
+}
+
+/* contact us */
+#contact{
+    background: url(../images/footerLine.png) no-repeat, url(../images/footerBg.png) no-repeat 0 0/ 91.5% 100%;
+    position: relative;
+}
+#contact img#car {
+    position: absolute;
+    top: -183px;
+}
+#contact p{
+    color: #fff;
+}
+#contact form{
+    top: -130px;
+    left: -80px;
+    position: relative;
+    background-color: #fff;
+}
+#contact .link-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .link-wrapper a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#contact form input {
+    border-color: #ed4d4766;
+}
+
+#contact .form-control:focus {
+    border-color: #ee4d47;
+    box-shadow: 0px 8px 9px #ee4d4736;
+}
+#contact a:hover{
+    color: #EE4D47;
+}
+/* footer */
+footer .footer-wrapper{
+    display: flex;
+    justify-content:space-between;
+}
+
+footer i{
+    color: #ED4D47;
+}
+/* --- Note : not mobile first approach ---- */
+/* large screens*/
+@media screen and (max-width: 992px) {
+    #banner h1{
+        font-size: 50px;
+        max-width: 350px;
+    }
+
+    #intro .img-circle-big{
+        position: absolute;
+        right: 3%;
+        top: 15%;
+        width: 300px;
+    }
+
+    #intro .img-circle-sm{
+        position: absolute;
+        right: 25%;
+        bottom: 10%;
+        width: 200px;
+        opacity: 0.5;
+    }
+
+    #intro .img-persons {
+        width: 250px;
+        bottom: -20%;
+    }
+    #intro .img-car {
+        width: 250px;
+        bottom: -29%;
+    }
+    #contact form{
+        top: 0px;
+        left: 0px;
+        position: relative;
+        background-color: #fff;
+    }
+  }
+
+/* iPads (landscape) ----------- */
+@media only screen and (max-width : 768px) {
+    #banner h1{
+        font-size: 40px;
+        max-width: 300px;
+    }
+
+    #intro .img-persons {
+        width: 30%;
+        bottom: -20%;
+    }
+    #intro .img-car {
+        width: 30%;
+        bottom: -22%;
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 321px) {
+    #intro .img-persons {
+        width: 20%;
+    }
+}
+
+
+
