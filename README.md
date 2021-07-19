@@ -1,6 +1,6 @@
 # traffico
 
-## This is a simple responsive html template converted from Figma :
+## This is a simple responsive html page converted from Figma :
 
 ### Demo : https://mohammadabulwafa.github.io/traffico/
 
